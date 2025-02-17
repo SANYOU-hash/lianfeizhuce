@@ -5,86 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，使页面适应不同设备 -->
     <title>注册账号</title> <!-- 设置页面标题 -->
     <style>
-        /* 全局设置 */
         body {
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #f06, #48c6ef); /* 渐变背景 */
+            font-family: Arial, sans-serif; /* 设置字体 */
+            display: flex; /* 使用弹性盒布局 */
+            justify-content: center; /* 水平居中对齐 */
+            align-items: center; /* 垂直居中对齐 */
+            height: 100vh; /* 设置高度为视口高度的100% */
+            margin: 0; /* 移除默认边距 */
+            background-color: #f4f4f9; /* 设置背景颜色 */
         }
-
-        /* 容器样式 */
         .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px; /* 更圆滑的圆角 */
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* 更强的阴影效果 */
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
+            background-color: #fff; /* 设置容器背景颜色 */
+            padding: 20px; /* 设置内边距 */
+            border-radius: 5px; /* 设置圆角 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
         }
-
-        h2 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 20px;
-            font-weight: 600; /* 设置标题字体粗细 */
-        }
-
-        /* 输入框样式 */
         input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px; /* 调小内边距 */
-            margin: 10px 0;
-            border: 2px solid #ddd; /* 更细的边框 */
-            border-radius: 10px; /* 圆角 */
-            font-size: 14px; /* 调小输入框文字大小 */
-            transition: all 0.3s ease-in-out; /* 平滑过渡效果 */
+            width: 100%; /* 设置输入框宽度为100% */
+            padding: 10px; /* 设置内边距 */
+            margin: 10px 0; /* 设置上下外边距 */
+            border: 1px solid #ccc; /* 设置边框 */
+            border-radius: 5px; /* 设置圆角 */
         }
-
-        input[type="text"]:focus, input[type="password"]:focus {
-            border-color: #007bff; /* 聚焦时的边框颜色 */
-            box-shadow: 0 0 10px rgba(0, 123, 255, 0.4); /* 聚焦时的光晕效果 */
-            outline: none; /* 去除聚焦时的默认外框 */
-        }
-
-        /* 按钮样式 */
         button {
-            width: 100%;
-            padding: 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 10px; /* 圆角按钮 */
-            font-size: 18px;
-            font-weight: 600; /* 加粗字体 */
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* 平滑过渡和缩放效果 */
+            width: 100%; /* 设置按钮宽度为100% */
+            padding: 10px; /* 设置内边距 */
+            background-color: #007bff; /* 设置背景颜色 */
+            color: white; /* 设置文字颜色 */
+            border: none; /* 移除边框 */
+            border-radius: 5px; /* 设置圆角 */
+            cursor: pointer; /* 设置鼠标悬停时的光标样式 */
         }
-
         button:hover {
-            background-color: #0056b3; /* 鼠标悬停时按钮变色 */
-            transform: translateY(-2px); /* 按钮悬浮时轻微上移 */
-        }
-
-        button:active {
-            transform: translateY(1px); /* 按钮点击时轻微下移 */
-        }
-
-        /* 提示信息样式 */
-        #message {
-            color: #d9534f; /* 错误信息红色 */
-            font-size: 14px;
-            margin-top: 10px;
+            background-color: #0056b3; /* 设置鼠标悬停时的背景颜色 */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>SYB连账号注册系统</h2> <!-- 注册表单标题 -->
+        <h2>注册账号</h2> <!-- 注册表单标题 -->
         <input type="text" id="username" placeholder="用户名" required> <!-- 用户名输入框 -->
         <input type="password" id="password" placeholder="密码" required> <!-- 密码输入框 -->
         <button onclick="register()">注册</button> <!-- 注册按钮，点击时调用register函数 -->
@@ -122,3 +81,6 @@
     </script>
 </body>
 </html>
+
+
+
